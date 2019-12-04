@@ -7,6 +7,7 @@ import Jsx from './jsx.js'
 import Inputs from './form/inputs'
 import Selects from './form/selects'
 import MulInputs from './form/mulInputs'
+import Calcutor from './status/calculator'
 class Index extends Component {
     render(){
         return(
@@ -17,6 +18,7 @@ class Index extends Component {
                     <Route exact path='/inputs' component={Inputs}/>
                     <Route exact path='/selects' component={Selects}/>
                     <Route exact path='/mulInputs' component={MulInputs}/>
+                    <Route exact path='/calculator' component={Calcutor}/>
                 </Switch>
             </BrowserRouter>
         )
