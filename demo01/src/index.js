@@ -14,7 +14,7 @@ class Index extends Component {
             <BrowserRouter>
                 <Switch>
                     <Route exact path='/' component={Jsx}/>
-                    <Route exact path='/minigirl/:n' component={MiniGirl}/>
+                    <Route exact path='/minigirl' component={MiniGirl}/>
                     <Route exact path='/inputs' component={Inputs}/>
                     <Route exact path='/selects' component={Selects}/>
                     <Route exact path='/mulInputs' component={MulInputs}/>

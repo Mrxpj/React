@@ -1,5 +1,6 @@
 import React,{Component,Fragment} from 'react'
 import {Link} from 'react-router-dom'
+import Item from './component/item'
 
 class miniGirl extends Component {
     constructor(props) {
@@ -20,9 +21,11 @@ class miniGirl extends Component {
                         {
                             this.state.list.map((item,index)=> {
                                 return (
-                                    <li key={index+item}>{item}
-                                        <span onClick={this.deleteItem.bind(this,index)}>删除</span>
-                                    </li>
+                                    <Item content = {item} 
+                                          key = {index+item} 
+                                          index = {index}
+                                          deleteItem = {this.deleteItem.bind(this)}
+                                    />
                                 )
                             })
                         }
